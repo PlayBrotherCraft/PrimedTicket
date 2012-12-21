@@ -1,0 +1,25 @@
+*:/sicket [$] = >>>
+    try(
+        _ticket_dispatch($),
+    @ex,
+        msg(concat(color(red), 'Oops, an error occurred. Check the console!'))
+        console(@ex)
+    )
+<<<
+		msg(color(Red). 'Ticket Help ---------------------------------------------------')
+		if(_CHticket_perm(write))
+		  {msg(color(Yellow). '/ticket write [Title] [Description]:' color(Gray). 'Writes a ticket with a Title & Description.')}
+		  if(_CHticket_perm(list))
+		  {msg(color(Yellow). '/ticket list:' color(Gray). 'Lists all tickets and their id\'s and title\'s.')}
+		if(_CHticket_perm(read))
+		  {msg(color(Yellow). '/ticket read [ID]:' color(Gray). 'Views a ticket submitted with the ID.')}
+		if(_CHticket_perm(delete))
+		  {msg(color(Yellow). '/ticket delete [ID]:' color(Gray). 'Delete\'s a ticket with the ID.')}
+		if(_CHticket_perm(teleport))
+		  {msg(color(Yellow). '/ticket tp [ID]:' color(Gray). 'Teleport\'s to a ticket with the ID.')}
+		if(_CHticket_perm(edit))
+		  {msg(color(Yellow). '/ticket mark [ID] [Status]:' color(Gray). 'Marks a Ticket\'s status.')}
+		if(_CHticket_perm(note))
+		  {msg(color(Yellow). '/ticket note [ID] [Note]:' color(Gray). 'Add\'s note\'s to a ticket with the ID.')}
+		msg(color(Red). '---------------------------------------------------')
+

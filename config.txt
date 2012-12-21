@@ -1,0 +1,13 @@
+/test = _fetch_tickets()
+
+/test2 = msg(player())
+
+/test3 = msg(get_value('report'))
+
+*:/update = >>>
+    assign(@balance, 45.8)
+    if(@balance < 50,
+        die(§a.'You '.§c.'do not'.§a.' have enough money to update warps.'),
+        die(§a.'You '.§b.'do'.§a.' have enough money to update warps.')
+        )
+<<<
