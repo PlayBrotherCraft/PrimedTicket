@@ -1,4 +1,4 @@
-CHticket
+Primedticket
 ========
 
 A ticket system made with the Bukkit plugin Command Helper.
@@ -21,7 +21,7 @@ key:
 	- /ticket note <id> <note> - Add's note's to a ticket with the specified id. (notes cannot be deleted. (by command)) - permission CHticket.note.add
 
 ####Ticket Storage Tree:
-	- ACzChef.CHticket.tickets <Array of tickets(by id)>
+	- ACzChef.primeticket.tickets <Array of tickets(by id)>
 		- 0 <array of data per ticket>
 			- Player: <Player that wrote the ticket>
 			- Title: <Title that the player wrote>
